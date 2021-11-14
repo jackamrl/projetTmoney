@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * index
+ * BOYODI LONDOU JACQUES
  */
 public class index {
 
@@ -10,9 +10,9 @@ public class index {
 
         // int syntaxe = 145; // La syntaxe Tmoney
         String saisi; // La syntaxe saisie par l'utilisateur
-        int menu = 0;
+        int menu = 0; // Pour le switch
         int montant;
-        boolean code = false;
+        boolean code;
         do {
             System.out.println("veuillez entrer la syntaxe Tmoney : ");
             saisi = sc.nextLine();
@@ -38,20 +38,24 @@ public class index {
         menu = sc.nextInt();
         switch (menu) {
         case 1:
+            System.out.println("");
             System.out.println("Entrer le montant : ");
             montant = sc.nextInt();
             break;
         case 2:
+            System.out.println("");
             System.out.println("Entrer le montant : ");
             montant = sc.nextInt();
             break;
         case 3:
+            System.out.println("");
             System.out.println("1. Recharge");
             System.out.println("2. Forfait internet");
             System.out.println("3. Forfait voix");
             System.out.println("4. Forfait mixte");
             break;
         case 4:
+            System.out.println("");
             System.out.println("Choisir une catégorie");
             System.out.println("1. Electricité/Eau");
             System.out.println("2. Chaines TV");
@@ -62,16 +66,31 @@ public class index {
             System.out.println("7. Autres");
             break;
         case 5:
+            System.out.println("");
+            System.out.println("Entrer le montant : ");
 
             break;
         case 6:
+            System.out.println("");
+            System.out.println("Choisir la banque: ");
+            System.out.println("1. ORABANK");
+            System.out.println("2. CAGECFI");
+            System.out.println("3. MEDIASOFT");
 
             break;
         case 7:
-
+            System.out.println("");
+            System.out.println("1. Consulter mon solde");
+            System.out.println("2. Consulter mes 3 dernieres transactions");
+            System.out.println("3. Verifier mon identite");
+            System.out.println("4. Gerer mon compte");
             break;
         case 8:
-
+            System.out.println("");
+            System.out.println("1. Recuperer mes 3 derniers codes LAFIA (Cash power)");
+            System.out.println("2. Renvoyer un code Tcash");
+            System.out.println("3. Renitialisation de code secret");
+            System.out.println("4. Annuler la transaction");
             break;
 
         default:
